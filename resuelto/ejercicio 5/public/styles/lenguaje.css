@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+div{
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+div a{
+    padding-right: 25px;
+}
+
+div img{
+    margin: 55px;
+    width: 150px;
+    height: 150px;
+}

@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+}
+
+a{
+    padding-right: 200px;
+}
+
+
