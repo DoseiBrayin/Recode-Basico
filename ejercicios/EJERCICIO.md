@@ -24,7 +24,7 @@
 - Bebidas
     - Malteada de chocolate 4$
     - Gaseosa 2$
-    - Botella de agua 1$
+    - Limonada 1$
 
 (Tiempo de duración 2 horas)
 
