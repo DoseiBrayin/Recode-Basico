@@ -11,3 +11,28 @@
 - Se debe tener una estructura de carpetas (una carpeta public con la carpeta de los estilos y otra para las imagenes)
 - Un archivo index.html donde se tendra la pagina principal
 - una carpeta llamada pages donde estaran las otras 2 paginas solicitadas 
+
+# Evaluación 
+*Lo han contratado para diseñar la pagina web para un nuevo FoodTruck en la ciudad de medellín, el cliente quiere una pagina web donde se presente el proyecto FoodTruck medellín, su menu de comida rapida, y un apartado de redes sociales.* 
+
+*El cliente proporciona las imagenes de su menu de comida y este es la lista de precios de cada una*
+
+- Comida rapida
+    - Hamburguesa con queso 5$
+    - HotDog 3$
+    - papas con chili 4.50$
+- Bebidas
+    - Malteada de chocolate 4$
+    - Gaseosa 2$
+    - Botella de agua 1$
+
+(Tiempo de duración 2 horas)
+
+## _Criterios de aceptación_
+- _5 puntos_ ) La pagina debe seguir la jerarquia de carpetas vista en clase.
+
+- _5 puntos_ ) La pagina debe ser semantica.
+
+- _5 puntos_ ) Diseño de la pagina.
+
+- **_5 puntos extras_** ) La pagina este en un repositorio de github.
