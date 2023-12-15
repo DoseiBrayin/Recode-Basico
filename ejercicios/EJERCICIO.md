@@ -15,7 +15,7 @@
 # Evaluación 
 *Lo han contratado para diseñar la pagina web para un nuevo FoodTruck en la ciudad de medellín, el cliente quiere una pagina web donde se presente el proyecto FoodTruck medellín, su menu de comida rapida, y un apartado de redes sociales.* 
 
-*El cliente proporciona las imagenes de su menu de comida y este es la lista de precios de cada una*
+*El cliente proporciona las imagenes de su menu de comida, su marca y  la lista de precios del menu*
 
 - Comida rapida
     - Hamburguesa con queso 5$
