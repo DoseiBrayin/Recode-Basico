@@ -36,3 +36,6 @@
 - _5 puntos_ ) Diseño de la pagina.
 
 - **_5 puntos extras_** ) La pagina este en un repositorio de github.
+
+## Ejecrcio 
+Crear un blog con tarjetas de articulos y un footer con redes sociales
