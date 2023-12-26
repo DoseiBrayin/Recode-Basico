@@ -39,3 +39,11 @@
 
 ## Ejecrcio 
 Crear un blog con tarjetas de articulos y un footer con redes sociales
+
+## Premio
+*Has sido contratado para crear el sitio web de Code for Tomorrow. El cliente solicita una página sencilla donde en la principal se encuentre información básica sobre desarrollo de software, en otra página información sobre un sistema operativo y una tercera sobre una base de datos.*
+- Debes tener una estructura de carpetas (una carpeta llamada public con subcarpetas para los estilos y otra para las imágenes)
+- Un archivo index.html donde se tendrá la página principal
+- Una carpeta llamada pages donde estarán las otras 2 páginas solicitadas
+
+Espero que esto te sea útil. ¡Buena suerte con tu tarea! 😊
