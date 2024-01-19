@@ -49,7 +49,7 @@ Crear un blog con tarjetas de articulos y un footer con redes sociales
 Espero que esto te sea útil. ¡Buena suerte con tu tarea! 😊
 
 ## Ejercicio Clase 10
-Les piden diseño de una pagina web para una empresa de venta de productos de limpieza y quieren que se siga la siguiente estructura.
+Les piden diseño de una pagina web para una empresa de venta de productos de limpieza y quieren que se siga la siguiente estructura. SE ENTEGA EN GITHUB
 
 ![Alt text](image-1.png)
 
