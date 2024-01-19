@@ -47,3 +47,14 @@ Crear un blog con tarjetas de articulos y un footer con redes sociales
 - Una carpeta llamada pages donde estarán las otras 2 páginas solicitadas
 
 Espero que esto te sea útil. ¡Buena suerte con tu tarea! 😊
+
+## Ejercicio Clase 10
+Les piden diseño de una pagina web para una empresa de venta de productos de limpieza y quieren que se siga la siguiente estructura.
+
+![Alt text](image-1.png)
+
+- La pagina debe seguir la jerarquia de carpetas vista en clase.
+
+- La pagina debe ser semantica.
+
+- Diseño de la pagina (No es necesario que sea responsive) Pero debe seguir los conceptos de UX/UI vistos en clase.
