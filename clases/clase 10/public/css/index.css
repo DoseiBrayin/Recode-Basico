@@ -22,3 +22,17 @@ a{
     text-decoration: none;
 }
 
+.section-1{
+    margin-left: 30px;
+    width: 800px;
+    text-align: center;
+}
+
+h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section-1 p{
+ text-wrap: balance;   
+}
