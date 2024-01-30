@@ -1,0 +1,36 @@
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+
+#tarjeta-2{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+    margin: 5px 10px 30px 2px;
+    flex: 1 1 auto;
+}
+
+.tarjeta-1{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+    margin: 5px 10px 30px 2px;
+    flex: 1 1 auto;
+    justify-content: space-between;
+}
+
+.img-1{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
