@@ -1,0 +1,11 @@
+table{
+    border: 1px solid black;
+}
+
+form{
+    margin: 10px;
+}
+
+td, tr, th{
+    border: 1px solid aqua;
+}
