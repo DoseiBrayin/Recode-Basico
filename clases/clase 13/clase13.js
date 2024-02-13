@@ -38,6 +38,22 @@ var menor = 5 < 5;
 var mayorIgual = 5 >= 5;
 var menorIgual = 5 <= 5;
 
+// CONDICIONALES
+// ESTRUCTURA IF => IF (CONDICION) { BLOQUE DE CODIGO }
+if (5 > 5) {
+    console.log("Es mayor");
+}
+
+if (mayorIgual) {
+    console.log("Es mayor");
+}
+
+if(edad >= 18 && nombre === "Juan") {
+    console.log("Juan es mayor de edad");
+}
+
+
+
 
 
 
