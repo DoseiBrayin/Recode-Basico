@@ -15,7 +15,7 @@ var objeto = {
     nombre: "Juan",
     edad: 30
 };
-var colores = ["Rojo", "Verde", "Azul"];
+var colores = ["Rojo", "Verde", "Azul","Amarillo","Rosado"];
 
 // OPERADORES
 var suma = 5 + 5;
