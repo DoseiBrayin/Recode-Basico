@@ -52,6 +52,8 @@ if(edad >= 18 && nombre === "Juan") {
     console.log("Juan es mayor de edad");
 }
 
+// LISTAS 
+
 
 
 
