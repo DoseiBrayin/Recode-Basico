@@ -66,6 +66,7 @@ function Veterinaria(mascota) {
     }
 }
 
+console.log(Veterinaria(mascota).listaAtendidos)
 
 // Path: clases/clase%2017/index.js
 
