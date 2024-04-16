@@ -50,11 +50,22 @@ let mascota1 = FactoryMascota("Firulais",
     false,
     FactoryDueño("Miguel", "Alvarez"))
 
-function Veterinaria() {
-    this.listaAtendidos = []
-    this.listaNoAtendidos = []
+function Veterinaria(mascota) {
+    let listaAtendidos = []
+    let listaNoAtendidos = []
 
+    if (mascota.IsAtendidos){
+        listaAtendidos.push(mascota)
+    } else{
+        listaNoAtendidos.push(mascota)
+    }
+
+    return {
+        listaAtendidos,
+        listaNoAtendidos
+    }
 }
+
 
 // Path: clases/clase%2017/index.js
 
