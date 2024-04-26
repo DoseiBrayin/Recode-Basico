@@ -1,0 +1,27 @@
+.grid-area {
+    display: grid;
+    grid-template-areas: 
+        "header nav nav"
+        "sidebar main main"
+        "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
