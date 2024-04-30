@@ -8,7 +8,16 @@
 }
 
 .grid-cards{
+    width: max-content;
+    height: max-content;
     display:grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template: repeat(auto-fill, minmax(300px, 1fr)) / repeat(3, minmax(300px, 1fr));
 }
+
+@media (height: 200px) and (width: 768px){
+    .grid-cards{
+        grid-template: repeat(auto-fill, minmax(300px, 1fr)) / repeat(2, minmax(300px, 1fr));
+    }
+}
+
