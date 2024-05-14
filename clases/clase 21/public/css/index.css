@@ -1,0 +1,16 @@
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.tarjeta{
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 300px;
+}
