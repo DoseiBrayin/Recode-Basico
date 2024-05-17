@@ -16,3 +16,19 @@
     border: 1px solid black;
     background-color: #f1f1f1;
 }
+
+.usuario{
+    background-color: darkgray;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+    width: 200px;
+    height: 200px;
+}
+
+.usuarios{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
