@@ -7,13 +7,14 @@ const btnGuardar = document.querySelector('#btnAdd')
 
 const usuarios = document.querySelector('.usuarios')
 
-console.log(inputNombre, inputApellido, inputCedula, inputFecha, btnGuardar, usuarios)
+
 
 btnGuardar.addEventListener('click', () => {
     const nombre = inputNombre.value
     const apellido = inputApellido.value
     const cedula = inputCedula.value
     const fecha = inputFecha.value
+
 
     if (!nombre || !apellido || !cedula || !fecha) {
         alert('Por favor llene todos los campos')
