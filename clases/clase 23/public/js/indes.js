@@ -11,6 +11,7 @@ const operaciones = document.querySelectorAll('.operaciones');
 
 const numeros = document.querySelectorAll('.numeros');
 
+// FUNCIONES DE LA PANTALLA
 function agregarNumero(numero) {
     pantalla.childNodes[0].nodeValue += numero;
 }
@@ -19,7 +20,7 @@ function borrarNumero() {
     pantalla.childNodes[0].nodeValue = '';
 }
 
-borrar.addEventListener('click', borrarNumero);
+// FUNCIONES DE LAS OPERACIONES
 
 function sumarNumeros(){
     let numeros = pantalla.childNodes[0].nodeValue.split('+');
@@ -52,10 +53,14 @@ function resultado(operador,operacion){
     }
 }
 
+// EVENTOS 
+
+borrar.addEventListener('click', borrarNumero);
+
 operaciones.forEach( boton => {
     boton.addEventListener('click', (event) => {
         if (event.target.textContent != 'C' && event.target.textContent != '=') {
-        agregarNumero(event.target.textContent);
+            agregarNumero(event.target.textContent);
         }
         if(event.target.textContent == '='){
             if (pantalla.childNodes[0].nodeValue.includes('+')){
@@ -69,7 +74,9 @@ operaciones.forEach( boton => {
 });
 
 numeros.forEach( boton => {
-    boton.addEventListener('click', (event) => {
-        agregarNumero(event.target.textContent);
+    boton.addEventListener('click', (event) => {;
+        if(event.target.textContent.length <= 1){
+            agregarNumero(event.target.textContent);
+        }
     });
 });
