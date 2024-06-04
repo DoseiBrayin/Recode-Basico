@@ -31,19 +31,39 @@ function sumarNumeros(){
     borrarNumero();
     return resultado;
 }
-function igualResultados(resultado){
-    agregarNumero(resultado);
+
+function restarNumeros(){
+    let numeros = pantalla.childNodes[0].nodeValue.split('-');
+    let resultado = parseFloat(numeros[0]);
+    numeros.shift();
+    numeros.forEach( numero => {
+        resultado -= parseFloat(numero);
+    });
+    borrarNumero();
+    return resultado;
 }
 
-igual.addEventListener('click', () => {
-    let resultado = sumarNumeros();
-    igualResultados(resultado);
-});
+function resultado(operador,operacion){
+    if (operador == '+'){
+        agregarNumero(operacion);
+    }
+    if (operador == '-'){
+        agregarNumero(operacion);
+    }
+}
 
 operaciones.forEach( boton => {
     boton.addEventListener('click', (event) => {
         if (event.target.textContent != 'C' && event.target.textContent != '=') {
         agregarNumero(event.target.textContent);
+        }
+        if(event.target.textContent == '='){
+            if (pantalla.childNodes[0].nodeValue.includes('+')){
+               resultado('+',sumarNumeros());
+            }
+            if (pantalla.childNodes[0].nodeValue.includes('-')){
+                resultado('+',restarNumeros());
+            }
         }
     });
 });
