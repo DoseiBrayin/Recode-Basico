@@ -62,7 +62,7 @@ operaciones.forEach( boton => {
                resultado('+',sumarNumeros());
             }
             if (pantalla.childNodes[0].nodeValue.includes('-')){
-                resultado('+',restarNumeros());
+                resultado('-',restarNumeros());
             }
         }
     });
