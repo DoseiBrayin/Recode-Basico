@@ -3,11 +3,18 @@ const formulario = document.querySelector('.aggUsuario');
 
 const agregaLocalStorage = (usuario) => {
     try {
-        localStorage.setItem('usuario', JSON.stringify(usuario));
+        if (!localStorage.getItem('usuario')) {
+            localStorage.setItem('usuario', JSON.stringify([usuario]));
+            return;
+        }
+        const usuarios = [...JSON.parse(localStorage.getItem('usuario'))];
+        usuarios.push(usuario);
+        localStorage.setItem('usuario', JSON.stringify(usuarios));
     } catch (error) {
         console.error(error.message);
     }
 }
+
 
 const obtenerLocalStorage = () => {
     try {
@@ -48,6 +55,16 @@ const Usuarios = () => {
                 </div> `
         },
 
+        getUsuario: () => {
+            return {
+                nombre: this.nombre,
+                apellido: this.apellido,
+                email: this.email,
+                password: this.password,
+                url: this.url
+            }
+
+        }
     }
 }
 
@@ -73,6 +90,6 @@ formulario.addEventListener('submit', (e) => {
     );
 
     section.innerHTML += usuario.jsonToHtml();
-
+    agregaLocalStorage(usuario.getUsuario());
 });
 
