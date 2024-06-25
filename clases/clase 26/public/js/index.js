@@ -7,7 +7,7 @@ const agregaLocalStorage = (usuario) => {
             localStorage.setItem('usuario', JSON.stringify([usuario]));
             return;
         }
-        const usuarios = [...JSON.parse(localStorage.getItem('usuario'))];
+        const usuarios = obtenerLocalStorage();
         usuarios.push(usuario);
         localStorage.setItem('usuario', JSON.stringify(usuarios));
     } catch (error) {
@@ -15,10 +15,9 @@ const agregaLocalStorage = (usuario) => {
     }
 }
 
-
 const obtenerLocalStorage = () => {
     try {
-        return JSON.parse(localStorage.getItem('usuario'));
+        return [...JSON.parse(localStorage.getItem('usuario'))];
     } catch (error) {
         console.error(error.message);
     }
@@ -64,7 +63,7 @@ const Usuarios = () => {
                 url: this.url
             }
 
-        }
+        },
     }
 }
 
