@@ -25,8 +25,12 @@ const Usuarios = () => {
         password: '',
         url: '',
 
-        setNombre: (nombre) => {
+        Usuario: (nombre, apellido, email, password, url) => {
             this.nombre = nombre;
+            this.apellido = apellido;
+            this.email = email;
+            this.password = password;
+            this.url = url;
         },
 
         getNombre: () => {
@@ -42,15 +46,33 @@ const Usuarios = () => {
                         ">${this.nombre} ${this.apellido}</h5>
                         <p class="card-text">${this.email}</p>
                 </div> `
-        }
+        },
+
     }
 }
+
 
 
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
     const usuario = Usuarios();
-    usuario.setNombre("Juan");
-    console.log(usuario.getNombre());
+    const nombre = document.querySelector('#nombre').value;
+    const apellido = document.querySelector('#apellido').value;
+    const email = document.querySelector('#email').value;
+    const password = document.querySelector('#password').value;
+    const img = document.querySelector('#img').value;
+
+    const section = document.querySelector('.usuarios');
+
+    usuario.Usuario(
+        nombre,
+        apellido,
+        email,
+        password,
+        img
+    );
+
+    section.innerHTML += usuario.jsonToHtml();
+
 });
 
