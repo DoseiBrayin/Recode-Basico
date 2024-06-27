@@ -43,15 +43,30 @@ const Usuarios = () => {
             return this.nombre;
         },
 
-        jsonToHtml: () => {
-            return `
-                <div class="card" style="width: 18rem;">
-                    <img src="${this.url}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title
-                        ">${this.nombre} ${this.apellido}</h5>
-                        <p class="card-text">${this.email}</p>
-                </div> `
+        jsonToHtml: (estilos=null) => {
+            const tarjeta = document.createElement('div');
+            const img = document.createElement('img');
+            const h5 = document.createElement('h5');
+            const p = document.createElement('p');
+
+            if(estilos){
+                tarjeta.className = estilos;
+            }
+
+            if(this.url == '' ){
+                img.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJTGVnbpOOjFmSSVVujeGD5z859GlOnWz0Pg&';
+            } else {
+                img.src = this.url;
+            }
+
+            h5.textContent = `${this.nombre} ${this.apellido}`;
+            p.textContent = this.email;
+
+            tarjeta.appendChild(img)
+            tarjeta.appendChild(h5)
+            tarjeta.appendChild(p)
+
+            return tarjeta;
         },
 
         getUsuario: () => {
@@ -77,6 +92,8 @@ formulario.addEventListener('submit', (e) => {
     const email = document.querySelector('#email').value;
     const password = document.querySelector('#password').value;
     const img = document.querySelector('#img').value;
+    const estilos = document.querySelector('#estilos').value;
+
 
     const section = document.querySelector('.usuarios');
 
@@ -87,8 +104,10 @@ formulario.addEventListener('submit', (e) => {
         password,
         img
     );
-
-    section.innerHTML += usuario.jsonToHtml();
-    agregaLocalStorage(usuario.getUsuario());
+    if(estilos){
+        section.appendChild(usuario.jsonToHtml(estilos));
+    }else{
+        section.appendChild(usuario.jsonToHtml());
+    }
 });
 
